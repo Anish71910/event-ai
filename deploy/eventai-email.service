@@ -1,0 +1,22 @@
+[Unit]
+Description=EventAI email delivery and reminders
+After=network-online.target
+Wants=network-online.target
+[Service]
+User=eventai
+Group=eventai
+WorkingDirectory=/opt/eventai
+EnvironmentFile=/etc/eventai.env
+Environment=EMAIL_WORKER=0
+Environment=EVENTAI_WORKER=0
+ExecStart=/opt/eventai/.venv/bin/python /opt/eventai/notification_worker.py
+Restart=on-failure
+RestartSec=5
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/var/lib/eventai /opt/eventai/instance
+UMask=0077
+[Install]
+WantedBy=multi-user.target

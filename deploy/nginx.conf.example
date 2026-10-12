@@ -1,0 +1,21 @@
+# Replace the domain and certificate paths with your actual values.
+server {
+    listen 80;
+    server_name events.example.com;
+    return 301 https://$host$request_uri;
+}
+server {
+    listen 443 ssl;
+    server_name events.example.com;
+    ssl_certificate /etc/letsencrypt/live/events.example.com/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/events.example.com/privkey.pem;
+    client_max_body_size 21m;
+    location / {
+        proxy_pass http://127.0.0.1:5000;
+        proxy_set_header Host $host;
+        proxy_set_header X-Forwarded-Proto https;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_read_timeout 120s;
+        proxy_send_timeout 120s;
+    }
+}

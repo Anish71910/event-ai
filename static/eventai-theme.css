@@ -1,0 +1,61 @@
+/* EventAI visual identity, with client-requested purple theme overrides below. */
+:root{--bg:#f7f8fc;--ink:#0b2145;--green:#5934be;--gold:#e3bf73;--muted:#586780;--line:#dce2ee;--violet:#6940d3;--cyan:#51c8ec}
+body{background:radial-gradient(ellipse at 100% 0,#eae8fa 0,transparent 38%),var(--bg);color:var(--ink)}
+header{background:#061c42;box-shadow:0 4px 24px #061c4218}
+.brand{letter-spacing:1.3px}.brand img{background:white;border-radius:10px;object-fit:contain;width:60px;height:64px}.brand small{color:#8ddcf4}
+nav a.active{color:#a4e8fa;border-bottom-color:#8adff7}
+.primary{background:linear-gradient(120deg,#402397,#6c40d2);border-color:#5934be;box-shadow:0 4px 12px #6035bf1a}
+.gold{background:linear-gradient(110deg,#f0d699,#dbb565);color:#10284b;border-color:#d7af61}
+button{transition:background .18s,box-shadow .18s,transform .18s}button:hover{box-shadow:0 5px 14px #172c4815}button:focus-visible,a:focus-visible{outline:3px solid #1595bc;outline-offset:3px}
+input:focus,textarea:focus,select:focus{border-color:#7651ca;box-shadow:0 0 0 3px #7651ca20}
+.hero{background:linear-gradient(125deg,#04162f,#0b2e5f 58%,#422582);box-shadow:0 16px 40px #102c4914}
+.hero h1 em{color:#c1a8ff}.hero p,.hero .tiny{color:#ced8eb}.hero .eyebrow{color:#f0d497}
+.hero-art{background:#fff url('/static/eventai-logo.jpg') center/contain no-repeat;min-height:440px;margin:20px;border:1px solid #bcd7f3;border-radius:15px;box-shadow:0 0 30px #51c8ec1a}
+.hero-art .orb,.hero-art .art-word,.hero-art .art-caption{display:none}
+.chip.active{background:linear-gradient(110deg,#0b2850,#6740c6);border-color:#6740c6}
+.searchbar{box-shadow:0 8px 28px #162f5310}.card{box-shadow:0 3px 16px #172b4806}.card:hover{box-shadow:0 14px 30px #36236718;border-color:#bcafe0}
+.poster{background:linear-gradient(135deg,#0b2549,#5330a3)}
+.poster.Music{background:radial-gradient(circle at 80% 10%,#b78efc88,transparent 55%),linear-gradient(140deg,#111a45,#6434ab)}
+.poster.Technology{background:radial-gradient(circle at 85% 15%,#56cbed88,transparent 50%),linear-gradient(130deg,#041c3f,#174f88)}
+.poster.Food{background:linear-gradient(135deg,#19294e,#765630)}
+.poster.Art{background:linear-gradient(135deg,#322168,#865ed0)}
+.poster.Outdoors{background:linear-gradient(135deg,#0b2a4a,#207c99)}
+.poster.Business{background:linear-gradient(135deg,#081e40,#6d6087)}
+.tag{color:#142a50}.poster b{font-family:'DM Sans',Arial,sans-serif;font-style:normal;font-weight:700;font-size:30px}
+.banner{background:linear-gradient(115deg,#e9e6f8,#e5f4fc);border-color:#d2d2ea}.banner h3{color:#1f2952}
+.stat{border-top:3px solid #7850cf;box-shadow:0 5px 20px #1b2d4906}.stat:nth-child(2){border-top-color:#36a5cc}.stat:nth-child(3){border-top-color:#c19a48}.stat strong{color:#192d56}
+.panel{box-shadow:0 4px 20px #18304d05}.badge{background:linear-gradient(110deg,#f4ecd8,#f0ebfc);color:#263456;border:1px solid #e4d8b8}
+.note{background:#f5efdf;color:#524327}.demo{background:#f4ecd9;color:#574728}
+.status{background:#eaf1fc;color:#214f88}.status.approved{background:#e4f3ee;color:#216149}.status.pending{background:#f9efcf;color:#70561f}.status.rejected,.danger{background:#fdecee;color:#a43146}
+.avatar{background:linear-gradient(130deg,#e8e0fa,#d9f2fc);color:#422b83}.positive{color:#295c78}
+dialog{background:#fff;box-shadow:0 20px 100px #061a4266}dialog::backdrop{background:#07182cc2}.ticket{border-color:#c2a15d;background:linear-gradient(155deg,#fff,#f3f0fb)}
+#toast{background:#0a2348;border-color:#91cfe7}footer{background:#edf0f8;color:#162a4c}
+@media(max-width:1000px){.hero-art{min-height:350px;margin:14px}}
+@media(max-width:680px){nav{background:#061c42;overflow-x:auto;justify-content:space-evenly;padding-bottom:max(6px,env(safe-area-inset-bottom))}nav a{white-space:nowrap;flex-shrink:0}.brand img{width:43px;height:48px}.hero-art{height:300px;min-height:300px;margin:0 20px 20px}.hero h1{font-size:40px}#toast{bottom:78px}.stat strong{font-size:23px}.stats{grid-template-columns:repeat(3,minmax(0,1fr))}.stat{overflow-wrap:anywhere}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important}}
+@media print{body{background:white}header,main,footer,#demo,#toast{display:none!important}dialog[open]{position:absolute;inset:0;max-height:none;width:100%;box-shadow:none;border:none}dialog .close,dialog .ticket button{display:none}.ticket{break-inside:avoid}}
+
+/* Moctale/District-inspired hierarchy; original EventAI branding and components. */
+.card{position:relative}.like-button{position:absolute;right:12px;top:12px;border-radius:50%;width:42px;height:42px;padding:0;font-size:24px;background:#21132de8!important;color:#f0d8ff!important;border:1px solid #9e7bbb!important}.like-button[aria-pressed=true]{color:#ffb9e6!important;background:#633254ee!important}.recommendation-reason{font-size:12px;color:#d9b7ff;border-left:2px solid #ae7bec;padding-left:9px;min-height:38px}.recommendations-section{border-bottom:1px solid #443151;padding-bottom:30px}
+:root{color-scheme:dark;--bg:#100d17;--ink:#f4efff;--green:#bda0ff;--gold:#dcc5ff;--muted:#b5abc8;--line:#383042}
+body{background:radial-gradient(ellipse at 65% 0,#352049 0,transparent 35%),#100d17;color:var(--ink)}
+header{background:#100d17ee;border-bottom:1px solid var(--line);backdrop-filter:blur(18px)}
+.brand small{color:#cfb3ff}.brand img{border:1px solid #83699c}
+nav a.active{color:#e2cdff;border-color:#be9bff}
+button,input,select,textarea{background:#241e2e;color:#f5efff;border-color:#44354f;border-radius:12px}
+input::placeholder,textarea::placeholder{color:#aba0b8}input,select{min-height:46px}
+button:hover{background:#382a48;filter:none}.primary,.gold{background:#c4a2ff;color:#211033;border-color:#c4a2ff;box-shadow:none}.primary:hover,.gold:hover{background:#d6baff;color:#211033}
+.hero{display:block;background:transparent;min-height:0;box-shadow:none;border-radius:0;margin-top:14px}.hero-copy{padding:32px 0 20px}.hero h1{font-family:'DM Sans',Arial,sans-serif;font-size:clamp(38px,5vw,65px);font-weight:700;letter-spacing:-2px}.hero h1 em{color:#c6a4ff;font-style:normal}.hero p,.hero .tiny{color:#c1b6d0}.hero .eyebrow,.eyebrow{color:#d0afff!important}.hero .actions{margin-top:22px}
+h2,h3,.banner h3{font-family:'DM Sans',Arial,sans-serif;color:#f4efff}h2{font-weight:700;letter-spacing:-.6px}
+.searchbar{background:#211c2a;border-color:#41334e;border-radius:20px;box-shadow:none}.searchbar input,.searchbar select{background:#211c2a;border-color:#41334e}
+.chip{background:#241c30;border-color:#3a2c49;color:#d2c6df}.chip.active{background:#cbb0ff;color:#251536;border-color:#cbb0ff}
+.card,.panel,.stat,.empty{background:#1b1524;border-color:#372b45;color:#f4efff;box-shadow:none}.card{border-radius:20px}.card:hover{border-color:#9271b9;box-shadow:0 12px 30px #0003}.stat strong{color:#e2caff}.stat{border-top-color:#9573c2}.stat:nth-child(2){border-top-color:#c5a1f9}.stat:nth-child(3){border-top-color:#704d9b}
+.poster{height:220px}.poster small{position:absolute;bottom:15px;font-size:11px;color:#e0d4f0}.event-cover{display:block;width:100%;height:220px;object-fit:cover;background:#2a1e38}.cover-large{height:260px;border-radius:16px;margin-bottom:20px}.event-thumb{height:72px;width:72px;object-fit:cover;border-radius:14px}.event-row-info{display:flex;gap:16px;align-items:center;min-width:0}.event-row-info h3{overflow-wrap:anywhere}
+.banner,.badge{background:#332441;border-color:#604174;color:#e8d7f8}.banner .tiny{color:#d0beda}.status{background:#38264c;color:#e1c4ff}.status.pending,.note,.demo{background:#33273e;color:#e5ccef}.danger,.status.rejected{background:#482431;color:#ffb6c9}.avatar{background:#4e3168;color:#eddbff}.positive{color:#ccb2ff}
+dialog{background:#1a1423;color:#f4efff;border:1px solid #654b7b}dialog::backdrop{background:#09060ed9}.ticket{background:#241b30;color:#f4efff;border-color:#9f7bc1}.ticket img{background:white;border-radius:8px;padding:8px}
+.success-banner{border:1px solid #9a78c5;background:#38234e;color:#f0dcff;padding:16px;border-radius:12px;margin:16px 0}
+#eventEnd{display:block;background:#332543;border:1px solid #624675;padding:12px;border-radius:12px;color:#e6ccff}.inline-check{width:auto;min-height:0}#coverPreview{border-radius:12px;margin-top:12px}#coverPreview[hidden]{display:none}
+footer{background:#120d1a;color:#c6b5d9;border-color:#372b45}#toast{background:#e0caff;color:#281336;border-color:#e0caff}
+@media(max-width:680px){header{height:76px}.hero-copy{padding:24px 8px 8px}.hero h1{font-size:42px}.hero .tiny{font-size:11px}.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.card-body{padding:12px}.card-body h3{font-size:16px}.card-bottom{align-items:start;flex-direction:column;gap:10px}.poster,.event-cover{height:180px}.poster{padding:14px}.poster b{font-size:23px}.poster small{font-size:9px}.meta{font-size:11px}.cover-large{height:240px}nav{left:12px;right:12px;bottom:12px;background:#251c30f5;border:1px solid #594367;border-radius:28px;box-shadow:0 10px 30px #0009;padding:8px 12px;gap:8px}nav a{font-size:11px;padding:12px 8px}nav a.active{background:#4b345e;border:0;border-radius:20px;color:#ead7ff}.two .grid{grid-template-columns:1fr}.event-row-info{align-items:flex-start}.section-head{flex-wrap:wrap}.panel{padding:17px}footer{padding-bottom:110px}.stats{gap:7px}.stat strong{font-size:21px}#toast{bottom:94px}}
+@media(max-width:350px){.grid{grid-template-columns:1fr}.stats{grid-template-columns:1fr}}
+@media print{dialog,.ticket{background:white!important;color:#111!important}.ticket .eyebrow{color:#333!important}}

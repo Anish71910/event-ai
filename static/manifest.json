@@ -1,0 +1,15 @@
+{
+  "name": "EventAI",
+  "short_name": "EventAI",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#100d17",
+  "theme_color": "#100d17",
+  "icons": [
+    {
+      "src": "/static/eventai-logo.jpg",
+      "type": "image/jpeg",
+      "purpose": "any"
+    }
+  ]
+}
